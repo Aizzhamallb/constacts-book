@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- !navbar START -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Contacts Book</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" id="home-btn">Home</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active"
+              data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="createContact-modal"
+              >Create</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-inp">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- !navbar END -->
+
+    <!-- !content START -->
+    <div class="d-flex flex-wrap justify-content-center" id="contacts-list"></div>
+    <!-- !content END -->
+
+    <!-- !pagination block START -->
+    <div class="d-flex w-100 justify-content-center pagination-block">
+      <a class="btn btn-dark m-1" href="#" aria-label="Previous" id="prev-page">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+      <a class="btn btn-dark m-1" href="#" aria-label="Next" id="next-page">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </div>
+    <!-- !pagination block END -->
+
+    <!--! modal START -->
+
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Create contact</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="btn-close-modal"></button>
+      </div>
+      <div class="modal-body">
+        <input
+        type="text"
+        id="reg-name"
+        placeholder="Name"
+        class="mb-2 w-100 form-control"
+      />
+        <input
+        type="text"
+        id="reg-surname"
+        placeholder="Surname"
+        class="mb-2 w-100 form-control"
+      />
+        <input
+        type="number"
+        id="reg-number"
+        placeholder="Number"
+        class="mb-2 w-100 form-control"
+      />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="create-btn">Create</button>
+        <button type="button" class="btn btn-secondary" id="saveChanges-btn">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--! modal END -->
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

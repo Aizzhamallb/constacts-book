@@ -1,0 +1,28 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Aizhamal",
+      "surname": "Batyrbekova",
+      "number": "500214118"
+    },
+    {
+      "name": "Nurzat",
+      "surname": "Batyrbekova",
+      "number": "500214114",
+      "id": 2
+    },
+    {
+      "name": "Aymeerim",
+      "surname": "Batyrbekova",
+      "number": "500214114",
+      "id": 3
+    },
+    {
+      "name": "Rayana",
+      "surname": "Batyrbekova",
+      "number": "500214114",
+      "id": 4
+    }
+  ]
+}
